@@ -42,7 +42,7 @@ public class HealPlus extends JavaPlugin{
 				player.setFoodLevel(20);
 				player.sendMessage (ChatColor.RED + "You have healed that player!");
 				targetPlayer.sendMessage(ChatColor.LIGHT_PURPLE + "You have been healed!");
-			}else if (args.length == 2)
+			}else if (args.length == 2){
 				if(player.getServer().getPlayer(args[0]) != null){
 				Player targetPlayer = player.getServer().getPlayer(args[0]);
 				targetPlayer.setHealth(20);
@@ -50,13 +50,35 @@ public class HealPlus extends JavaPlugin{
 				player.setFoodLevel(20);
 				player.sendMessage (ChatColor.GREEN + "You have healed that player!");
 				targetPlayer.sendMessage(ChatColor.LIGHT_PURPLE + "You have been healed!");
+			}else if (args.length == 3){
+				player.sendMessage(ChatColor.DARK_RED + "This feature is not yet available");
 			}else{
 				player.sendMessage(ChatColor.RED + "That player is not online!");
 			}
 			}
+			}
+		}else if(commandLabel.equalsIgnoreCase("feedplus") || commandLabel.equalsIgnoreCase("fp")){
+			if(args.length == 0){
+				player.setFoodLevel(20);
+				player.sendMessage(ChatColor.LIGHT_PURPLE + "You have been fed!");
+			}else if (args.length == 1){
+				if(player.getServer().getPlayer(args[0]) != null){
+				Player targetPlayer = player.getServer().getPlayer(args[0]);
+				player.setFoodLevel(20);
+				player.sendMessage (ChatColor.RED + "You have fed that player!");
+				targetPlayer.sendMessage(ChatColor.LIGHT_PURPLE + "You have been fed!");
+			}else if (args.length == 2){
+				if(player.getServer().getPlayer(args[0]) != null){
+				Player targetPlayer = player.getServer().getPlayer(args[0]);
+				player.setFoodLevel(20);
+				player.sendMessage (ChatColor.GREEN + "You have fef that player!");
+				targetPlayer.sendMessage(ChatColor.LIGHT_PURPLE + "You have been fed!");
+			}else{
+				player.sendMessage(ChatColor.RED + "That player is not online!");
+		}
+		}
+		}
 		}
 		return false;
 	}
-
-
 }
