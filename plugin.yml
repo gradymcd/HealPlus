@@ -1,0 +1,9 @@
+name: HealPlus
+main: com.teknostuf.healplus.HealPlus
+version: 0.2
+description: >
+             HealPlus plugin
+commands:
+  healplus:
+    description: Heals a player
+    aliases: hp
