@@ -1,3 +1,12 @@
 name: HealPlus
-version: 0.3
-main: com.teknostuf.healplus
+main: com.teknostuf.healplus.HealPlus
+version: 1.0
+description: >
+             Feeds and/or heals players.
+commands:
+  HealPlus:
+    description: Heals a/the player
+    aliases: hp
+  FeedPlus:
+    description: Feeds a/the player
+    aliases: fp
