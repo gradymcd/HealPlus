@@ -1,6 +1,6 @@
 name: HealPlus
 main: com.teknostuf.healplus.HealPlus
-version: 1.0
+version: 1.0.1
 description: >
              Feeds and/or heals players.
 commands:
