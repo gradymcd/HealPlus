@@ -41,8 +41,7 @@ public class HealPlus extends JavaPlugin {
 					targetPlayer.setHealth(20);
 					targetPlayer.setFireTicks(0);
 					targetPlayer.setFoodLevel(20);
-					player.sendMessage(ChatColor.RED + "You have healed" + targetPlayer.getDisplayName() + "!");
-					targetPlayer.sendMessage(ChatColor.LIGHT_PURPLE + "You have been healed by" + player.getDisplayName() + "!");
+					player.sendMessage(ChatColor.GREEN + "You have been healed!");
 				} else if (args[0].equalsIgnoreCase("1")){
 					player.setHealth(1);
 					player.setFireTicks(0);
@@ -104,7 +103,8 @@ public class HealPlus extends JavaPlugin {
 					player.setHealth(20);
 					player.setFireTicks(0);
 				}
-				player.sendMessage(ChatColor.GREEN + "You have been healed!");
+				player.sendMessage(ChatColor.RED + "You have healed" + targetPlayer.getDisplayName() + "!");
+				targetPlayer.sendMessage(ChatColor.LIGHT_PURPLE + "You have been healed by" + player.getDisplayName() + "!");
 			} else if (args.length == 2) {
 				if (player.getServer().getPlayer(args[0]) != null) {
 					Player targetPlayer = player.getServer().getPlayer(args[0]);
@@ -184,8 +184,7 @@ public class HealPlus extends JavaPlugin {
 				if (player.getServer().getPlayer(args[0]) != null) {
 					Player targetPlayer = player.getServer().getPlayer(args[0]);
 					player.setFoodLevel(20);
-					player.sendMessage(ChatColor.GREEN + "You have fed " + targetPlayer.getDisplayName() + "!");
-					targetPlayer.sendMessage(ChatColor.LIGHT_PURPLE + "You have been fed by" + player.getDisplayName() + "!");
+					player.sendMessage(ChatColor.LIGHT_PURPLE + "You have been fed!");
 				} else if (args[0].equalsIgnoreCase("1")){
 					player.setFoodLevel(1);
 				} else if (args[0].equalsIgnoreCase("2")){
@@ -227,7 +226,8 @@ public class HealPlus extends JavaPlugin {
 				} else if (args[0].equalsIgnoreCase("20")){
 					player.setFoodLevel(20);
 				}
-				player.sendMessage(ChatColor.LIGHT_PURPLE + "You have been fed!");
+				player.sendMessage(ChatColor.GREEN + "You have fed " + targetPlayer.getDisplayName() + "!");
+				targetPlayer.sendMessage(ChatColor.LIGHT_PURPLE + "You have been fed by" + player.getDisplayName() + "!");
 			} else if (args.length == 2) {
 				if (player.getServer().getPlayer(args[0]) != null) {
 					Player targetPlayer = player.getServer().getPlayer(args[0]);
