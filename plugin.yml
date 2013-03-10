@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: HealPlus
 main: com.teknostuf.healplus.HealPlus
 version: 1.1.0
@@ -13,4 +14,21 @@ commands:
     aliases: fp
 =======
     aliases: fp
+>>>>>>> Beta 1.2.0
+=======
+name: HealPlusTekkit
+main: com.teknostuf.healplus.HealPlus
+version: 1.2.0
+description: >
+             Feeds and/or heals players.
+commands:
+  HealPlus:
+    description: Heals a/the player
+    aliases: hp
+  FeedPlus:
+    description: Feeds a/the player
+    aliases: fp
+  BurnPlus:
+    description: Sets fire ticks of a player
+    aliases: bp
 >>>>>>> Beta 1.2.0
