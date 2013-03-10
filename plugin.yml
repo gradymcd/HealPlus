@@ -9,4 +9,8 @@ commands:
     aliases: hp
   FeedPlus:
     description: Feeds a/the player
+<<<<<<< HEAD
     aliases: fp
+=======
+    aliases: fp
+>>>>>>> Beta 1.2.0

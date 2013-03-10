@@ -290,4 +290,8 @@ public class HealPlus extends JavaPlugin {
 				}
 		return false;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Beta 1.2.0
